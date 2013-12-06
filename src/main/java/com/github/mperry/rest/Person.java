@@ -1,7 +1,5 @@
 package com.github.mperry.rest;
 
-import groovy.transform.Canonical;
-
 /**
  * Created with IntelliJ IDEA.
  * User: MarkPerry
@@ -9,16 +7,13 @@ import groovy.transform.Canonical;
  * Time: 9:18 AM
  * To change this template use File | Settings | File Templates.
  */
-//@Canonical
 class Person {
-
 
 	private String firstName;
 	private String surname;
 	private int dobYear;
 
 	public Person() {
-
 	}
 
 	public Person(String fn, String s, int year) {
@@ -50,4 +45,5 @@ class Person {
 	public void setDobYear(int dobYear) {
 		this.dobYear = dobYear;
 	}
+
 }
