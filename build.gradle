@@ -7,23 +7,15 @@ apply plugin: 'jetty'
 defaultTasks "build"
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 dependencies {
-//    compile 'org.slf4j:slf4j-api:1.7.5'
-
-	compile 'org.springframework:spring-core:3.2.3.RELEASE'
 	compile 'org.springframework:spring-webmvc:3.2.3.RELEASE'
-	compile 'com.jayway.jsonpath:json-path:0.8.1'
-
-	compile 'org.slf4j:slf4j-api:1.7.5'
-	runtime 'org.slf4j:slf4j-jdk14:1.7.5'
 	runtime 'com.fasterxml.jackson.core:jackson-core:2.2.2'
 	runtime 'com.fasterxml.jackson.core:jackson-databind:2.2.2'
-	runtime 'javax.xml.bind:jaxb-api:2.2.9'
 
-    testCompile 'junit:junit:4.11'
+	testCompile 'junit:junit:4.11'
 }
 
 [jettyRun, jettyRunWar]*.with {
